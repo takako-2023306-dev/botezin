@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>ぼてじん.AR</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
+    <title>BotezinAR</title>
+
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
+
   </head>
   <body style="margin:0; padding:0;">
-    <model-viewer 
+    <model-viewer
       src="Botezin.glb"
       alt="Botezin 3D"
       ar
-      ar-modes="webxr scene-viewer quick-look"
+      ar-modes="webxr scrnr-ciewer quick-look"
       auto-rotate
       camera-controls
       style="width:100vw; height:100vh;"
-      scale="1"
+      scale="10000"
       camera-target="0m 0m 0m">
-      <button slot="ar-button" style="position:absolute; bottom:20px; left:20px; background-color:rgba(0,0,0,0.5); color:white; border:none; padding:10px; font-size:16px;">
-        ARで表示
-      </button>
-    </model-viewer>
+      <button slot="ar-button">ARで表示</button>
+      </model-viewer>
   </body>
 </html>
